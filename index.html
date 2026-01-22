@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripBinder — Organize Your Trips</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 96px;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.35);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(59, 130, 246, 0.45);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .feature h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 120px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>TripBinder</h1>
+    </header>
+
+    <section class="hero">
+      <h2>Travel documents, organized.</h2>
+      <p>
+        Keep your trips, timelines, and important files in one clean,
+        offline-friendly place—no email digging, no chaos.
+      </p>
+      <a href="#" class="cta">Download on the App Store</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Trips, not folders</h3>
+        <p>
+          Organize documents around actual trips instead of dumping
+          everything into generic storage.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Timeline-based planning</h3>
+        <p>
+          Flights, lodging, events—see everything in chronological order
+          so nothing sneaks up on you.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Offline by default</h3>
+        <p>
+          Your documents stay on your device. No signal? No problem.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Fast previews</h3>
+        <p>
+          Open PDFs, tickets, and confirmations instantly—no extra apps,
+          no waiting.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 TripBinder. Built for people who hate travel chaos.
+    </footer>
+  </div>
+</body>
+</html>
